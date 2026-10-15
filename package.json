@@ -1,0 +1,18 @@
+{
+  "name": "reacttry",
+  "version": "1.0.0",
+  "description": "This is React by MP",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "MP",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
