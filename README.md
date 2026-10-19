@@ -19,3 +19,9 @@
 - Function return React element know as functional element.
 - const HeadingComponent = () => { return <h1>Hello</h1> }
 - Component Composition using component between component like <Fn2 />, {Fn2} , <Fn2></Fn2> 
+
+# episode-04
+- How to build App (build planing)
+- prp -> Argument function
+- Config driven UI (like json API)
+- Map filter -> keyis important -> not used index as key
