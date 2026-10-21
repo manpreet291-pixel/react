@@ -25,3 +25,18 @@
 - prp -> Argument function
 - Config driven UI (like json API)
 - Map filter -> keyis important -> not used index as key
+
+# episode-05
+
+/*
+* Header
+* - logo
+* - Nav items
+* Body
+* - Search  
+* - Restaurant List
+* Footer
+* - Links
+*/
+
+- for practive  i will add YouTube component and fetch video from playlist

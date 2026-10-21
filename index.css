@@ -60,6 +60,9 @@ img.resaurent-image {
 .resaurent-card:hover {
     background: #efebeb;
 }
+button.filter-btn {
+    margin: 10px;
+}
 .order-link {
     background: rgb(27, 166, 114);
     padding: 10px;

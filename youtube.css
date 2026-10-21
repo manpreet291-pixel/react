@@ -1,0 +1,247 @@
+
+/*youtube*/
+
+.youtube-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.youtube-page > h1 {
+    margin-bottom: 24px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.video-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 10px #00000012;
+}
+
+.thumbnail-button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background: #111;
+}
+
+.thumbnail-button img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 16px;
+    color: white;
+    background: #ff0000;
+    border-radius: 10px;
+}
+
+.video-info {
+    padding: 12px;
+}
+
+.video-info h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.video-info p {
+    color: #666;
+    font-size: 13px;
+}
+
+.video-player {
+    margin-bottom: 28px;
+}
+
+.video-player iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.close-player {
+    margin-bottom: 12px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.error {
+    color: #c00;
+}
+
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Video Player Container */
+.video-player {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Close Button */
+.close-player {
+    display: block;
+    margin: 0 0 15px auto;
+    padding: 10px 18px;
+    background: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.close-player:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* Responsive YouTube iframe */
+.video-player {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    max-width: 100%;
+}
+.video-player iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 12px;
+    background: #000000;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Video Title */
+.video-player h2 {
+    margin: 18px 0 5px;
+    color: #222222;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* Optional Video Description */
+.video-player .video-description {
+    margin-top: 10px;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .video-player {
+        padding: 12px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+    }
+
+    .video-player iframe {
+        border-radius: 8px;
+    }
+
+    .video-player h2 {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .close-player {
+        padding: 8px 13px;
+        font-size: 13px;
+    }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    .video-player {
+        padding: 8px;
+    }
+
+    .video-player h2 {
+        font-size: 16px;
+    }
+}
+
+
+/* Video views and duration */
+.video-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+    color: #606060;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.video-meta span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.video-meta span + span::before {
+    content: "•";
+    margin-right: 8px;
+    color: #909090;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .video-meta {
+        font-size: 12px;
+        gap: 6px;
+    }
+}
