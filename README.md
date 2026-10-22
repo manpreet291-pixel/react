@@ -39,4 +39,24 @@
 * - Links
 */
 
+Two types of Export/Import
+
+
+- Default Export/Import
+
+export default Component;
+import Component from "path";
+
+- Named Export/Import
+
+export const Component;
+import {Component} from "path";
+
 - for practive  i will add YouTube component and fetch video from playlist
+
+# episode-06
+
+# React Hooks
+ (Normal JS utility functions)
+- useState() - Superpowerful State Variables in react
+- useEffect()
